@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<tr ng-repeat="item in foundItems">
+    <td>{{item.name}}</td>
+    <td>{{item.short_name}}</td>
+    <td>{{item.description}}</td>
+    <td><button class="btn btn-danger" ng-click="removeItems({index:$index})">Don't want this item</button></td>
+<tr>
+
+</tr>
+</body>
+</html>
