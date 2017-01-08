@@ -1,0 +1,10 @@
+<table class = "table table-hover">
+<tr ng-repeat="item in items">
+    <td>{{item.name}}</td>
+    <td>{{item.short_name}}</td>
+    <td>{{item.description}}</td>
+    <td><button class="btn btn-primary" ng-click="onRemove({index:$index})">Don't want this item</button></td>
+<tr>
+
+
+</table>

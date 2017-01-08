@@ -1,0 +1,24 @@
+<div ng-if="found.tableExists();">
+<table class="table table-striped table-bordered table-condensed">
+  <thead>
+    <th>name</th>
+    <th>Short name</th>
+    <th>Description</th>
+    <th>Remove from list</th>
+  </thead>
+  <tbody>
+    <tr ng-repeat="item in found.foundItems">
+      <td>{{item.name}}</td>
+      <td>{{item.short_name}}</td>
+      <td>{{item.description}}</td>
+      <td>
+        <button
+          ng-click="found.onRemove({itemIndex:$index})"
+          class="btn btn-danger">Don't want this one!</button>
+      </td>
+    </tr>
+</table>
+</div>
+<div
+  ng-if="found.messageExists();"
+  class="alert alert-danger">{{found.message}}</div>

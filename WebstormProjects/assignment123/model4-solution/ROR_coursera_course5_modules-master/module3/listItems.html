@@ -1,0 +1,12 @@
+<div ng-if="list.items.length">
+  <h3>Found these items for the search term <strong style="color:green"> "{{ list.searchTerm }}" </strong> </h3>
+  <ol>
+    <li ng-repeat="item in list.items">
+      <b>{{ item.short_name }}</b>
+      - {{ item.name }}
+      : <i>{{ item.description }}</i>
+      <button style="background:red" ng-click="list.onRemove({index: $index});">Don't want this one!</button>
+    </li>
+  </ol>
+</div>
+<div ng-if="list.message.length"> <h3 style="color:red">{{ list.message }}</h3> </div>

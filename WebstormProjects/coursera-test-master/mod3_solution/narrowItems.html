@@ -1,0 +1,13 @@
+<div class="col-xs-12">
+  <h3 ng-show="foundItemsController.found.length > 0">Narrowed {{foundItemsController.found.length}} Items</h3>
+
+  <ol class="list-group">
+    <li class="list-group-tem" ng-repeat="item in foundItemsController.found">
+      {{item.name}}: {{item.short_name}}: {{item.description}}
+        <button class="btn btn-warning" ng-click="foundItemsController.onRemove({index: $index});">Don't want this one!</button>
+    </li>
+  </ol>
+  <div ng-show="foundItemsController.showNothingMsg" class="error row">
+    Nothing found
+  </div>
+<div>

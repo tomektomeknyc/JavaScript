@@ -1,0 +1,4 @@
+input.success { border-color: green; }
+input.error { border-color: red; }
+div.success { color: green; }
+div.error { color: red; }
