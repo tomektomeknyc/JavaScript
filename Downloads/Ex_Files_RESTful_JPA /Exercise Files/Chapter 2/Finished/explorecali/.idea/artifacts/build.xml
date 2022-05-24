@@ -1,6 +1,0 @@
-<component name="ArtifactManager">
-  <artifact name="build">
-    <output-path>$PROJECT_DIR$/out/artifacts/build</output-path>
-    <root id="root" />
-  </artifact>
-</component>
