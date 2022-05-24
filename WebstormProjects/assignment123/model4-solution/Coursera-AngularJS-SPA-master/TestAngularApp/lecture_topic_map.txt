@@ -1,1 +1,0 @@
-lecture16,2-way, 1-way and 1-time Binding
